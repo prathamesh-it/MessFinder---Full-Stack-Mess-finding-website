@@ -37,6 +37,7 @@ public class SecurityConfig
                         .requestMatchers("/api/v1/public/**").permitAll()
                         .requestMatchers("/api/v1/owner/**").hasRole("MESS_OWNER")
                         .requestMatchers("/api/v1/admin/**").hasRole("SUPER_ADMIN")
+                        .requestMatchers("/api/v1/reviews/**").authenticated()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session

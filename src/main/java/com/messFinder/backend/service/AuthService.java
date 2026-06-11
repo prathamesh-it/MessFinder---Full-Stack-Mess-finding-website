@@ -1,5 +1,8 @@
 package com.messFinder.backend.service;
 
+import com.messFinder.backend.dtos.request.LoginRequest;
+import com.messFinder.backend.dtos.request.SignupRequest;
+import com.messFinder.backend.dtos.response.AuthResponse;
 import com.messFinder.backend.entity.User;
 import com.messFinder.backend.repository.UserRepository;
 import com.messFinder.backend.security.JwtUtil;
